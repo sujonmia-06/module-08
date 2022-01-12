@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px dotted blue;
+        height: 300px;
+        align-items: center;
+      }
+      section div {
+        border: 1px dashed black;
+        height: 200px;
+        width: 200px;
+      }
+      #box-1 {
+        flex-grow: 1;
+        order: 3;
+      }
+      #box-2 {
+        order: 1;
+      }
+      #box-3 {
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="box-1">
+        <h1>box-1</h1>
+      </div>
+      <div id="box-2">
+        <h1>box-2</h1>
+      </div>
+      <div id="box-3">
+        <h1>box-3</h1>
+      </div>
+    </section>
+  </body>
+</html>
